@@ -47,7 +47,7 @@ if (!gameover) {
 	}
 });
 
-//Reset machanism on pressing the reset button
+//Reset machanism on clicking the reset button
 
 reset.addEventListener("click", function(){
 	winningscore=0;
