@@ -10,12 +10,13 @@ var winsc= document.querySelector("input");
 var gameover= false;
 var winningscore=5;
 var wonBy=0;
-
+//Take input from html input field and assign the value to winningscore
 winsc.addEventListener("change", function(){
 	winningscore=Number(this.value);
 	winscdisp.textContent= this.value;
 	console.log(winningscore);
 });
+//Action to increase the score of Player one along comparing the score with winning score
 
 p1Button.addEventListener("click", function(){
 if (!gameover) {
@@ -31,6 +32,8 @@ if (!gameover) {
 	}
 });
 
+//Action to increase the score of Player Two along comparing the score with winning score
+
 p2Button.addEventListener("click", function(){
 if (!gameover) {
 		p2sc++;
@@ -43,6 +46,8 @@ if (!gameover) {
 		}
 	}
 });
+
+//Reset machanism on pressing the reset button
 
 reset.addEventListener("click", function(){
 	winningscore=0;
